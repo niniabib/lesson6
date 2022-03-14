@@ -1,13 +1,55 @@
 .background-image {
     width: 100%;
-    height: 100%;position: relative;
+    height: 100%;
+    position: relative;
 }
 .car {
-
+    width: 200px;
+    top: 300px;
+    left: 50px;
+    position: absolute;
+    animation:car 5s infinite;
 }
 .hel {
-
+    width: 100px;
+    top: 50px;
+    left: 20px;
+    position: absolute;
+    animation:hel 5s infinite;
 }
-.moto {
-
+.delivery {
+    width: 80px;
+    top: 340px;
+    left: 380px;
+    position: absolute;
+    animation:delivery 4s infinite;
 }
+.bus {
+    width: 210px;
+    height: 170px;
+    top: 280px;
+    left: 580px;
+    position: absolute;
+    animation:bus 3s infinite;
+}
+
+ @keyframes hel {
+    from{top: 50px;}
+    to{top: 100px}
+
+ }
+ @keyframes delivery {
+    from{left:380px}
+    to{left: 880px;}
+
+ }
+ @keyframes bus {
+    from{left:580px}
+    to{left:850px}
+
+ }
+ @keyframes car {
+    0% {left: 50px;}
+    40% {left: 380px;}
+    100%{left: 800px;}
+ }
